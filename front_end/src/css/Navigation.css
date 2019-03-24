@@ -1,0 +1,53 @@
+.nav-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 150px;
+  margin-bottom: 30px;
+
+  box-shadow: 0px 3px 10px grey;
+}
+
+button.nav-btn {
+  border-style: none;
+  background-color: white;
+  outline: none;
+  border-radius: 0.5;
+  font-size: 24px;
+  text-align: center;
+}
+
+.nav-button-text {
+  display: none;
+}
+
+button.nav-btn:focus {
+  background-color: rgb(131, 0, 26);
+  color: white;
+}
+
+button.nav-btn:hover {
+  background-color: rgb(131, 0, 26);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 568px) {
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 300px;
+    margin: 0;
+    margin-top: 40px;
+    box-shadow: 0px 0px 0px;
+  }
+  button.nav-btn {
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-button-text {
+    display: inline;
+    text-align: center;
+  }
+}

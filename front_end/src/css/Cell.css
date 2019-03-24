@@ -1,0 +1,84 @@
+.cell-container {
+  margin: 20px;
+  padding: 10px;
+  max-width: 100%;
+  margin: 20px auto;
+  border-bottom: 2px solid grey;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+picture {
+  display: inline;
+}
+
+img {
+  max-width: 90%;
+
+  border-radius: 10px;
+  border: 2px solid #c00000;
+  margin: 0;
+}
+
+img:hover {
+  opacity: 0.6;
+}
+
+.info-1 {
+  color: #c00000;
+  font-size: 10px;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.info-2 > a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.info-2 > a:hover {
+  color: rgb(0, 2, 107);
+  text-decoration: underline;
+}
+
+.book-btn {
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+  width: 12%;
+  height: 30px;
+  border-style: none;
+}
+.book-btn:active {
+  background-color: rgb(73, 73, 73);
+}
+
+.book-btn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 568px) {
+  img {
+    border-width: 3px;
+  }
+  .info-1 {
+    font-size: 14px;
+  }
+  .info-2 > a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    border-width: 3px;
+  }
+  .info-1 {
+    font-size: 16px;
+  }
+  .info-2 > a {
+    font-size: 20px;
+  }
+}
